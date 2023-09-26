@@ -1,0 +1,52 @@
+# HTML file
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header><u style="color: red"> Me,My Friends and their birthdays </u></header>
+
+    <main>
+        <ul>
+
+            <li> <b id="Hello">Name:- Harihar Acharya </b> </li>
+            <ul>
+                <li> Date of Birth:- 12 March </li>
+            </ul>
+            <li> <b id="Hello"> Name:- Rishita Khuntia </b> </li>
+            <ul>
+                <li> Date of Birth:- 29 June </li>
+            </ul>
+            <li> <b id="Hello"> Name:- Subhasmita Pahi </b> </li>
+            <ul>
+                <li> Date of Birth:- 20 July </li>
+            </ul>
+            <li> <b id="Hello"> Name:- Adyashree Panda </b> </li>
+            <ul>
+                <li> Date of Birth:- 14 August </li>
+            </ul>
+            <li> <b id="Hello"> Name:- Ankit Kumar Sahoo </b> </li>
+            <ul>
+                <li> Date of Birth:- 5 June </li>
+            </ul>
+
+        </ul>
+    </main>
+
+    <footer><b style="color: orange"> The End!! </b></footer>
+</body>
+</html>
+
+# CSS file
+
+body{
+    background-color: aqua;
+}
+#Hello{
+    background-color: blue;
+}
