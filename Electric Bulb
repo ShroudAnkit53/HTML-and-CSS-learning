@@ -1,0 +1,88 @@
+# HTML file
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Electric Bulb with HTML</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="container">
+        <div class="bulb">
+            <div class="glass"></div>
+            <div class="base"></div>
+        </div>
+        <br>
+        <em>OFF</em>
+    </div>
+   
+
+    <script>
+        let isOn = false;
+        let bulb = document.querySelector('.glass');
+        let button = document.querySelector('em');
+
+        button.addEventListener('click',()=>{
+            if(isOn){
+                button.style.background = 'white';
+                button.innerText = 'OFF';
+                bulb.style.background = 'inherit';
+                bulb.style.boxShadow = '0 0 5px 0';
+                isOn = false;
+            }
+            else{
+                button.style.background = 'green';
+                button.innerText = 'ON';
+                bulb.style.background = 'yellow';
+                bulb.style.boxShadow = '0 0 150px 60px yellow';
+                isOn = true;
+            }
+        })
+    </script>
+</body>
+</html>
+
+# CSS file(style3.css)
+
+body{
+    margin: 0;
+    padding: 0;
+    background: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.bulb{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.glass{
+    width: 150px;
+    height: 200px;
+    border-radius: 60% 60% 40% 40%;
+    box-shadow: 0 0 5px 0;
+    background: inherit;
+    backdrop-filter: blur(10px);/*for glass effect*/
+    transition: .2s;/*for smooth lit*/
+}
+.base{
+    width: 60px;
+    height: 50px;
+    background: grey;
+    border-radius: 2px;
+    box-shadow: 0 0 5px 0;
+}
+em{
+    background-color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 10px;
+    border: 1px solid grey;
+    transition: .5s;
+    box-shadow: 0 0 5px 0;
+}
